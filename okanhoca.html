@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Okan Ekim Kartvizit</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f2f2f2;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:20px;
+    }
+
+    .card{
+      width:100%;
+      max-width:1200px;
+      background:white;
+      position:relative;
+      overflow:hidden;
+      border-bottom:10px solid #0d2763;
+      box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .left-bar{
+      position:absolute;
+      left:0;
+      top:0;
+      width:140px;
+      height:100%;
+      background:#0d2763;
+    }
+
+    .content{
+      padding:70px 70px 120px 200px;
+      position:relative;
+      background-image: radial-gradient(#dbe4ff 1px, transparent 1px);
+      background-size: 35px 35px;
+    }
+
+    h1{
+      font-size:72px;
+      color:#0d2763;
+      font-weight:800;
+    }
+
+    .title{
+      font-size:32px;
+      color:#5f79b7;
+      margin-top:10px;
+    }
+
+    .line{
+      width:300px;
+      height:5px;
+      background:#c89b43;
+      margin:35px 0 50px;
+    }
+
+    .info-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+    }
+
+    .item{
+      margin-bottom:35px;
+    }
+
+    .label{
+      color:#0d2763;
+      font-size:18px;
+      font-weight:800;
+      margin-bottom:10px;
+      letter-spacing:1px;
+    }
+
+    .value{
+      font-size:22px;
+      color:#222;
+      line-height:1.5;
+    }
+
+    .footer{
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:#0d2763;
+      color:#c9d4ff;
+      padding:25px;
+      text-align:center;
+      font-size:22px;
+    }
+
+    @media(max-width:768px){
+
+      .left-bar{
+        width:90px;
+      }
+
+      .content{
+        padding:40px 30px 120px 120px;
+      }
+
+      h1{
+        font-size:42px;
+      }
+
+      .title{
+        font-size:24px;
+      }
+
+      .info-grid{
+        grid-template-columns:1fr;
+      }
+
+      .footer{
+        font-size:16px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="left-bar"></div>
+
+    <div class="content">
+
+      <h1>Okan Ekim</h1>
+
+      <div class="title">
+        DVM, PhD
+      </div>
+
+      <div class="line"></div>
+
+      <div class="info-grid">
+
+        <div>
+
+          <div class="item">
+            <div class="label">EMAIL</div>
+            <div class="value">okanekim@yahoo.com</div>
+          </div>
+
+          <div class="item">
+            <div class="label">WEB</div>
+            <div class="value">avesis.ankara.edu.tr/ekim</div>
+          </div>
+
+          <div class="item">
+            <div class="label">OFFICE</div>
+            <div class="value">+90 312 955 13 11</div>
+          </div>
+
+        </div>
+
+        <div>
+
+          <div class="item">
+            <div class="label">INSTAGRAM</div>
+            <div class="value">okanekimvet</div>
+          </div>
+
+          <div class="item">
+            <div class="label">LINKEDIN</div>
+            <div class="value">Okan Ekim</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+      Ankara University ・ Faculty of Veterinary Medicine
+    </div>
+
+  </div>
+
+</body>
+</html>
